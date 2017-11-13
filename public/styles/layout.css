@@ -24,3 +24,6 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ img.logo {
+  width="80px" height="80px"
+ }
