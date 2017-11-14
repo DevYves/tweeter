@@ -7,5 +7,11 @@ counter.text(maxLength);
 textArea.keydown(function(){
   var characters = $(this).val().length+1;
   counter.text(maxLength- characters);
+  if (characters > maxLength) {
+    counter.addClass('makeRed');
+   } else {
+    counter.removeClass('makeRed');
+   }
+
 });
 });
