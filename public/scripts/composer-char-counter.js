@@ -1,13 +1,11 @@
-console.log("Script loaded.");
 
 $(document).ready(function() {
-
-  console.log("Document Ready.");
-
-  $(".new-tweet").on("input", function() {
-    console.log("MEOW.");
-  console.log($(".counter"));
-
-  });
-
+var textArea = $('.textarea');
+var counter = $('.counter');
+var maxLength = 140;
+counter.text(maxLength);
+textArea.keydown(function(){
+  var characters = $(this).val().length+1;
+  counter.text(maxLength- characters);
+});
 });
