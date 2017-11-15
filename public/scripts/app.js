@@ -47,7 +47,7 @@ var data = [
       "handle": "@johann49"
     },
     "content": {
-      "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit."
+      "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit. "
     },
     "created_at": 1461113796368
   }
@@ -86,7 +86,7 @@ function createTweetElement(tweetData){
          .append(`<img class="avatar" src="${tweetData.user.avatars.regular}">`)
          .append(`<h3 class="username">${tweetData.user.name}</h2>`)
          .append(`<span>${tweetData.user.handle}</span>`);
-  var paragr = $(`<p>${tweetData.content.text}</p>`);
+  var paragr = $(`<p>`).text(`${tweetData.content.text}`);
   var opendiv =$(`<div>`);
   var div = $('<div class="icons">')
          .append('<i class="fa fa-heart">')
