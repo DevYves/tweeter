@@ -1,6 +1,6 @@
 $(document).ready(function(){
-var tweetArea = $('.thetweets');
-var icons = $('.icons');
+var tweetArea = $('article');
+var icons = $('div');
 tweetArea.mouseenter(function(){
   tweetArea.css('opacity', 1);
   icons.css('opacity', 1);

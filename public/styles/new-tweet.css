@@ -1,22 +1,16 @@
-.new-tweet {
- background-color: #e6e9ef;
- border-radius: 7px;
- padding: 10px;
- padding-top:1px;
-}
-
-.new-tweet textarea {
-  padding: 10px;
-  width: 100%;
+.avatar {
+  height:90px;
+  width:90px;
 
 }
 
-.new-tweet .counter {
-  float: right;
-}
+article {
+  border: 1px solid black;
+  border-radius:7px;
+  margin-top: 10px;
+  opacity: .8;
+  z-index: 1;
 
-.new-tweet h2 {
-  border-bottom: 1px solid black;
 }
 
 .container {
@@ -24,26 +18,17 @@
   padding-right: 2em;
  }
 
- .new tweet form {
-  paddi
- }
+div {
+  float: right;
+  padding: 5px;
 
- .makeRed {
-  color: red;
- }
-
-article {
-  border: 1px solid black;
-  border-radius:7px;
-  margin-top:20px;
+}
+footer {
+  padding:10px;
 }
 
-
-.avatar {
-  height:90px;
-  width:90px;
-
-
+footer span {
+  padding: 5px;
 }
 
 header {
@@ -53,22 +38,60 @@ header {
 
 }
 
-header span {
-  float: right;
-}
-
 header h3 {
   display:inline-block;
   vertical-align: top;
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 0;
-
 
 }
 
-footer {
-  border-top: 1px solid #ccc;
-  height:55px;
+header span {
+  float: right;
+
+}
+
+i {
+  color: #63c6b8;
+
+}
+
+i {
+  padding:4px;
+}
+
+.icons {
+  opacity: 0;
+}
+
+.makeRed {
+  color: red;
+
+}
+
+
+.new-tweet {
+ background-color: #e6e9ef;
+ border-radius: 7px;
+ padding: 10px;
+ padding-top:1px;
+
+}
+
+.new-tweet textarea {
+  padding: 5px;
+  width: 100%;
+
+}
+
+.new-tweet .counter {
+  float: right;
+
+}
+
+.new-tweet h2 {
+  border-bottom: 1px solid black;
+
 }
 
 p {
@@ -76,20 +99,7 @@ p {
 
 }
 
-footer span {
-  padding: 5px;
-}
-
-div {
-  float: right;
-  padding: 5px;
+.tweetsWrapper {
+  margin-bottom:15px;
 
 }
-
-.icons {
-  opacity: 0;
-  color: #63c6b8;
-}
-
-.thetweets {
-  opacity: 0.7;
