@@ -13,6 +13,13 @@ article {
 
 }
 
+article:hover {
+  opacity: 1;
+}
+article:hover .icons{
+  display: block;
+}
+
 .container {
   padding-left: 2em;
   padding-right: 2em;
@@ -61,7 +68,7 @@ i {
 }
 
 .icons {
-  opacity: 0;
+  display:none;
 }
 
 .makeRed {
