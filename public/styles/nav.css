@@ -1,3 +1,30 @@
+.compose {
+  bottom:0;
+  float: right;
+  background: #e7fdff;
+  color: #00a087;
+  border: 1px solid black;
+  border-radius: 5px;
+  display:inline-block;
+  margin-right: 45px;
+  margin-top:10px;
+  width:95px;
+  top: 0;
+  height: 60px;
+  font-size: larger;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.compose:hover {
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+  font
+
+}
+
+
 #nav-bar {
 background-color: #00a087;
 color: #e8fdff;
@@ -32,3 +59,33 @@ z-index: 100;
 
 }
 
+
+#nav-bar {
+  background-color: #00a087;
+  color: #e8fdff;
+  height: 80px;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  padding: 0em 2em;
+  z-index: 1;
+}
+
+#nav-bar .logo {
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+#nav-bar .header {
+  float: left;
+  font-size: xx-large;
+  line-height: 2.5;
+  margin-left: 10px;
+}
+
+#nav-bar div {
+  float: right;
+  padding: 8px 10px 0px 0px;
+}

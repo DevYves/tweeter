@@ -6,7 +6,15 @@
 
 $(document).ready(function() {
 
+
+
+  $(".compose").on("click", function() {
+    $(".new-tweet").slideToggle().find("textarea").focus();
+  });
+
   function createTweetElement(tweetData){
+    const days = Math.floor((Date.now() - tweetData.created_at)/(1000 * 60 * 60 * 24));
+    console.log(days);
   var header = $('<header>')
          .append(`<img class="avatar" src="${tweetData.user.avatars.regular}">`)
          .append(`<h3 class="username">${tweetData.user.name}</h2>`)
@@ -18,7 +26,7 @@ $(document).ready(function() {
          .append('<i class="fa fa-retweet">')
          .append('<i class="fa fa-flag">');
   var footer = $(`<footer>`)
-         .append(`<span>${tweetData.created_at}</span>`)
+         .append(`<span>${days} days ago</span>`)
          .append(div);
 
   var full = $('<article>')
@@ -80,10 +88,6 @@ function submitTweets(){
 submitTweets();
 
 
-
-  $(".compose").on("click", function() {
-    $(".new-tweet").slideToggle().find("textarea").focus();
-  });
 
 
 

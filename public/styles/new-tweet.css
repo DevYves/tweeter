@@ -20,6 +20,10 @@ article:hover .icons{
   display: block;
 }
 
+.button {
+display:inline-block;
+}
+
 .container {
   padding-left: 2em;
   padding-right: 2em;
@@ -49,8 +53,9 @@ header {
 header h3 {
   display:inline-block;
   vertical-align: top;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 0;
+  margin-left:5px;
 
 }
 
