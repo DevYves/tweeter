@@ -81,13 +81,23 @@ submitTweets();
 
 
 
+  $(".compose").on("click", function() {
+    $(".new-tweet").slideToggle().find("textarea").focus();
+  });
+
 
 
 
 // var tweet = createTweetElement(tweetData);
-
-
+// function(){
+// $(".compose").click(function(){
+//     $(".newtweet").slideToggle(300);
+// });
+// }
 
 
 });
+
+
+
 
