@@ -4,7 +4,7 @@ Tweeter is a simple, single-page Twitter like clone created as a student project
 
 !["Full Page Layout"](https://github.com/DevYves/tweeter/blob/master/Docs/Full-Page.png)
 
-!["Tweeter Closeup"](https://github.com/DevYves/Tweeter/blob/master/Tweet.png)
+!["Tweeter Closeup"](https://github.com/DevYves/tweeter/blob/master/Docs/Tweet.png)
 
 
 ## Dependencies
