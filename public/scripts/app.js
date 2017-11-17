@@ -1,18 +1,14 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
+//Wrapper that keeps functions from firing until the document has been loaded
 $(document).ready(function() {
-
-
 
   $(".compose").on("click", function() {
     $(".new-tweet").slideToggle().find("textarea").focus();
   });
 
+//Function which constructs the tweet HTML nodes by deconstructing the database
+//object and converting them into html elements.
   function createTweetElement(tweetData){
+    //function to convert date into days using UTC time
     const days = Math.floor((Date.now() - tweetData.created_at)/(1000 * 60 * 60 * 24));
     console.log(days);
   var header = $('<header>')
@@ -38,10 +34,10 @@ $(document).ready(function() {
 
 }
 
+// Adds result of function createdTweets to top of HTML section .tweetsWrapper
+//effectively adding the new tweet to the top of the page.
 function renderTweets(tweets) {
   for(var tweet in tweets) {
-    console.log("tweet in loop :", tweets);
-    console.log("hopefuly the object :", tweets[tweet]);
     var createdTweet = createTweetElement(tweets[tweet]);
     $('.tweetsWrapper').prepend(createdTweet);
   }
@@ -59,6 +55,8 @@ function loadTweets() {
 
 loadTweets();
 
+//function to handle the POST request on the submission of tweets in the form box using Ajax to post new
+//tweets in an asynchronous manner so that users do not need to refresh the page.
 function submitTweets(){
   $('#button').on('click', function(event){
     event.preventDefault();
@@ -86,19 +84,6 @@ function submitTweets(){
 }
 
 submitTweets();
-
-
-
-
-
-
-// var tweet = createTweetElement(tweetData);
-// function(){
-// $(".compose").click(function(){
-//     $(".newtweet").slideToggle(300);
-// });
-// }
-
 
 });
 

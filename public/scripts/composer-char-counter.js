@@ -1,4 +1,5 @@
-
+//function used to interact with the character counter - countdownm from 140 - turn red if over that
+// number and modify the DOM to reflect this.
 $(document).ready(function() {
 var textArea = $('.textarea');
 var counter = $('.counter');
